@@ -19,10 +19,19 @@ public class Concat {
         int[] arr2 = {7, 8, 9};
 
         System.out.println("Пример:");
-        System.out.println("arr1 = [1, 2, 3]");
-        System.out.print("arr2 = [7, 8, 9]");
+        System.out.print("arr1 = [");
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.print(arr1[i]);
+            if (i < arr1.length - 1) System.out.print(", ");
+        }
+        System.out.println("]");
 
-        System.out.println(" ");
+        System.out.print("arr2 = [");
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i]);
+            if (i < arr2.length - 1) System.out.print(", ");
+        }
+        System.out.println("]");
 
         int[] result = concat(arr1, arr2);
 
